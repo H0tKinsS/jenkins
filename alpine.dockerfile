@@ -1,7 +1,6 @@
 FROM alpine:latest
 
-RUN apt-get update \
-    && apt-get install -y --no-install-recommends mysql-client \
+RUN apk-get update \
     && ls -ll \
     && mkdir test
 
