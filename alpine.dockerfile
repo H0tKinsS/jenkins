@@ -1,6 +1,5 @@
 FROM alpine:latest
 
-RUN apk get update \
-    && ls -ll \
+RUN ls -ll \
     && mkdir test
-
+RUN whoami
